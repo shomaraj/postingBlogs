@@ -1,0 +1,70 @@
+<%- include("partials/header"); -%>
+<div class="body">
+
+  <div class="contact-desc">
+
+    <h1>Contact</h1>
+    <p> <%= contactContent %> </p>
+    <hr>
+     <h3>Message us</h3><hr>
+    <form class="" action="/mail" method="post">
+      <div class="form-group">
+        <label>Your name</label>
+        <input class="form-control" type="text" name="name">
+        <label>E-mail</label>
+          <input class="form-control" type="email" name="emmail">
+          <label>Your Comments</label>
+        <textarea class="form-control" name="comments"  rows="3" cols="10"></textarea>
+
+      </div>
+      <button class="btn btn-primary btn-large" type="submit" name="button">  Write to us </button>
+
+    </form>
+</div>
+<aside class="contact-info">
+  <div class="">
+    <h3>Direct Contact</h3><hr>
+    <p> Office : #102 / 12,</p>
+    <p> Santa Maria Complex,
+        2880, Broadway, NY </p>
+    <p> Phone  : 72999992562 </p>
+</div>
+
+   <div class="">
+     <h3 class="">Connect with us</h3><hr>
+     <h4>For support or any queries </h4>
+     <p>Email us at :</p>
+     <p>info@myBlogs.com</p>
+     <div class="">
+        <img class="location" src="/images/office1.jpg" alt="officeimage">
+     </div>
+   </div>
+
+ <div class="map">
+  <div class="mapouter"><div class="gmap_canvas">
+    <iframe width="100%" height="100%" id="gmap_canvas"
+    src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+    </iframe><a href="https://123movies-to.org"></a><br>
+    <style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}
+    </style><a href="https://www.embedgooglemap.net">google map plugin html</a>
+    <style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}
+    </style></div>
+  </div>
+
+ </div>
+</aside>
+
+<div class="gallery">
+  <h3>GALLERY</h3>
+  <img class="contactImage" src="/images/landscape.jpg" alt="Galleryimage">
+  <img class="contactImage" src="/images/food.jpg" alt="Gallerymage">
+  <img class="contactImage" src="/images/spring.jpg" alt="Galleryimage">
+  <img class="contactImage" src="/images/river.jpg" alt="Galleryimage">
+  <img class="contactImage" src="/images/Wellness & Yoga.jpg" alt="Galleryimage">
+  <img class="contactImage" src="/images/Krakow.jpg" alt="Galleryimage">
+</div>
+
+</div>
+
+<%- include("partials/footer"); -%>
